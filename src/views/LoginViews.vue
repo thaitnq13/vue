@@ -1,4 +1,5 @@
 <script>
+
 export default {
   data() {
     return {
@@ -30,6 +31,7 @@ export default {
   <div class="container">
     <form @submit.prevent="login">
       <h2 class="mb-3">Login</h2>
+      <InputCustom type="email" label_name="Email address" name="email" />
       <div class="input">
         <label for="email">Email address</label>
         <input class="form-control" type="text" name="email" />
@@ -41,7 +43,7 @@ export default {
       <div class="alternative-option mt-4">
         You don't have an account? <span @click="goToRegister">Register</span>
       </div>
-      <div class="d-flex">
+      <div class="d-flex justify-content-between">
         <button type="submit" class="mt-4 btn-submit">Login</button>
       </div>
     </form>
