@@ -31,7 +31,6 @@ export default {
   <div class="container">
     <form @submit.prevent="login">
       <h2 class="mb-3">Login</h2>
-      <InputCustom type="email" label_name="Email address" name="email" />
       <div class="input">
         <label for="email">Email address</label>
         <input class="form-control" type="text" name="email" />
